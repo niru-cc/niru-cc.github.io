@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Practice</title>
+    <!--below is copied from the favicon generation site.-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <h1>Interactive Media</h1>
-    <h2>Instructor: Dr. Rohit Ashok Khot</h2>
-    <h3>Email: rohitashok.khot@rmit.edu.au (Weekdays 9am-5pm)</h3>
+    <img src="cover.png" alt="simple cover image" />
+    <!--adding a hidden tag.-->
+    <h2 hidden>Instructor: Dr. Rohit Ashok Khot</h2>
+    <!--adding ids to buttons. usually <button></button>. this will help in javascript.
+        this is labelled as a single word. if a space is used it would be like putting two ids.-->
+    <button id="enrollment-button">Enrollment</button>
+    <button id="syllabus-button">Syllabus</button>
+    <a href="https://www.abc.net.au/">Go to ABC News</a>
+    <a href="about.html">About</a>
+    <!--classes are not unique. ids are. 
+        this classname is named this way to remind to make the text blue in js.-->
+    <h3 class="blue">Email: rohitashok.khot@rmit.edu.au (Weekdays 9am-5pm)</h3>
     <ul>
       <li>Group 1: Every Tuesday (09:30 am - 12:30 pm)</li>
       <li>Group 2: Every Tuesday (01:30 pm - 04:30 pm)</li>
@@ -36,5 +51,9 @@
       Lastly, you will be able to critically evaluate web projects based on
       user-centered design principles.
     </p>
+    <!--span- inline styling
+        div- separate 
+        icons- create on favicon gen, download+extract. copy files to folder in repository, then copy the code to head.
+        the extra words in the opening tag are attributes. is only in opening tag.-->
   </body>
 </html>
