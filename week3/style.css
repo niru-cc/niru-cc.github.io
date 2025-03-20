@@ -1,12 +1,59 @@
+* {
+    font-weight:lighter;
+    font-family: 'Courier Prime', Courier, monospace;
+}
+
 h1 {
     color:rgb(21, 43, 73);
+    font-weight:bold;
+    font-size: 2rem;
 }
 h2 {
     color:rgb(106, 64, 86);
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: <300>;
+    font-style: normal;
 }
-h3 {
-    color:plum;
-}
-p { color:black;
 
+h3 {
+    color:rgb(163, 48, 48);
 }
+p { 
+    color:black;
+}
+li {
+    color:rgb(97, 172, 163);
+}
+
+section {
+    border: 1px solid burlywood;
+}
+
+#outcomes {
+    color:rgb(117, 136, 22);
+    border: 4px dashed rgb(97, 172, 163);
+} 
+
+/*.bluec {
+    color:blue;
+}
+/* <- for commenting
+asterisk is a universal selector
+
+class name- start with a "."
+id names- start with a "#"
+
+cascading- 
+the later command wins
+more specific rules win (e.g: main-heading, things with class/ids over h1) over order
+
+points for priority:
+style attribute- 1000
+id- 100
+class, pseudo class, attribute- 10
+element- 1
+
+(style attributes are in the html file)
+
+end of comment -> */ 
