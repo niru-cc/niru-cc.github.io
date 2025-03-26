@@ -1,0 +1,53 @@
+* {
+    background-color: beige;
+    font-size: 16px;
+    font-family: 'Courier Prime', Courier, monospace;
+}
+
+body {
+    color:black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0 auto;
+    width: 400;
+    border: 1px solid rgb(250, 117, 143);
+    border-bottom: 2px dashed rgb(255, 175, 175);
+    min-height: 200px;
+    /* min and max height is better than fixed minmax heights */
+    padding: 10px;
+    /* top - right - bottom - left */
+    margin-bottom: 20px;
+    background-color: azure;
+}
+
+.vcenter {
+    line-height: 160px;
+    /* height - top padding - bottom padding
+    200 - 20 - 20 = 160 */
+}
+
+span {
+    color: blue;
+    /*display:none <- will nuke the applied things. can be used to temporarily hide stuff*/
+}
+
+/* top - right - bottom - left 
+Margin- space around element/between it and the stuff its next to
+padding- in all the stuff in the element ie border and text
+
+margin auto% makes something horizontally centred
+border strokes are on the outer edge of an element. they need a width, style and colour
+
+display:block- div, h1, p, header
+
+display:inline- span, a, img, input
+ok with being in a parent element*/
