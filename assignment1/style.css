@@ -7,10 +7,9 @@ body {
   display: flex;
   flex-direction: column;
   color: black;
-  margin: 30px;
-  margin-left: 50px;
-  /* I wanted to try out a style that slightly resembled the actual site. Since there were a lot of colours included, I decided to just stick with a light orange like the title card for the background of this webpage. */
+  margin: 50px;
 }
+/* I wanted to try out a style that slightly resembled the actual site. Since there were a lot of colours included, I decided to just stick with a light orange like the title card for the background of this webpage. */
 
 h1 {
   font-family: "Squada One", sans-serif;
@@ -19,13 +18,13 @@ h1 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
-  /* The two main fonts I decided to use were Arvo and Squada One. I thought a slab font would be a good choice as the main font considering the colours used and would be more ligible. With Squada One, it was only something I wanted to use for the title. I didn't want massive text for the title since it was long, but I still went for a sans serif font that looked a little blocky but still okay given the length of the header. */
 }
-
+/* The two main fonts I decided to use were Arvo and Squada One. I thought a slab font would be a good choice as the main font considering the colours used and would be more ligible. With Squada One, it was only something I wanted to use for the title. I didn't want massive text for the title since it was long, but I still went for a sans serif font that looked a little blocky but still okay given the length of the header. */
 h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+/* I kept the text aligned to the center along with the main header. Because the main contents of this page were split to the left and right, I felt it would be more natural than keeping it on the left like it defaults to. */
 
 a {
   color: rgb(255, 255, 255);
@@ -33,19 +32,18 @@ a {
 /* Because this is just the link to the site at the top, I just chose white since it stood out better than the default. */
 
 h3 {
-  margin: 20px;
-  margin-top: 15px;
+  margin: 30px;
   font-weight: bold;
   font-size: 18px;
 }
+/* I went with a font size a little bigger than 16px to better differentiate between the questions and responses. 20px ended up looking a bit awkward and stretched out, so I kept it to just 18px. */
 
 li {
-  padding: 20px;
-  margin-left: 25px;
+  margin: 30px;
 }
 
 p {
-  padding: 20px;
+  margin: 30px;
 }
 
 div {
@@ -55,7 +53,7 @@ div {
   max-width: 45%;
   margin: 3%;
 }
-/* Most of the text in the site were on a white background. I tried a pure white, but a warm off-white blended in better with the background while keeping the text readable, and I added in a double border to make the sections clearer. */
+/* Most of the text in the site were on a white background. I tried a pure white, but a warm off-white blended in better with the background while keeping the text readable, and I added in a double border to make the sections clearer. The text inside also had margins to separate them from those borders. */
 
 div.l {
   align-self: flex-start;
@@ -65,4 +63,4 @@ div.r {
   align-self: flex-end;
 }
 
-/* I organised the questions and answers into left and right classes so I could align them similar to how the Concert Hall site arranges its text, even without corresponding images. I figured this would be good to try with flexbox, which is why I chose that as the display mode. In the end, all the boxes looked spaced out but still clear.*/
+/* I organised the questions and answers into left and right classes so I could align them similar to how the Concert Hall site arranges its text, even without corresponding images. I figured this would be good to try with flexbox, which is why I chose that as the display mode. I still wanted the boxes to go downwards so I switched it to column. In the end, all the boxes looked spaced out but still clear.*/
