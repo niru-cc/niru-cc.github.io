@@ -40,22 +40,22 @@ h3 {
 }
 
 li {
-  margin: 20px;
+  padding: 20px;
   margin-left: 25px;
-  max-width: 75ch;
 }
 
 p {
-  margin: 20px;
+  padding: 20px;
 }
 
 div {
   border-style: double;
   border-width: 5px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 244, 230);
   max-width: 45%;
-  margin: 2%;
+  margin: 3%;
 }
+/* Most of the text in the site were on a white background. I tried a pure white, but a warm off-white blended in better with the background while keeping the text readable, and I added in a double border to make the sections clearer. */
 
 div.l {
   align-self: flex-start;
@@ -65,4 +65,4 @@ div.r {
   align-self: flex-end;
 }
 
-/* I organised the questions and answers into left and right classes so I could align them similar to how the Concert Hall site arranges its text, even without corresponding images. */
+/* I organised the questions and answers into left and right classes so I could align them similar to how the Concert Hall site arranges its text, even without corresponding images. I figured this would be good to try with flexbox, which is why I chose that as the display mode. In the end, all the boxes looked spaced out but still clear.*/
