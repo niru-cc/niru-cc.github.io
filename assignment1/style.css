@@ -1,16 +1,15 @@
-* {
+body {
   font-family: "Arvo", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   background-color: rgb(253, 164, 104);
-  /* I wanted to try out a style that slightly resembled the actual site. Since there were a lot of colours included, I decided to just stick with a light orange like the title card for the background of this webpage. */
-}
-
-body {
+  display: flex;
+  flex-direction: column;
   color: black;
   margin: 30px;
   margin-left: 50px;
+  /* I wanted to try out a style that slightly resembled the actual site. Since there were a lot of colours included, I decided to just stick with a light orange like the title card for the background of this webpage. */
 }
 
 h1 {
@@ -25,20 +24,45 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 a {
   color: rgb(255, 255, 255);
 }
+/* Because this is just the link to the site at the top, I just chose white since it stood out better than the default. */
 
 h3 {
-  margin-top: 5%;
-  margin-bottom: 5px;
+  margin: 20px;
+  margin-top: 15px;
   font-weight: bold;
   font-size: 18px;
 }
 
 li {
-  margin-left: 20px;
+  margin: 20px;
+  margin-left: 25px;
   max-width: 75ch;
 }
+
+p {
+  margin: 20px;
+}
+
+div {
+  border-style: double;
+  border-width: 5px;
+  background-color: antiquewhite;
+  max-width: 45%;
+  margin: 2%;
+}
+
+div.l {
+  align-self: flex-start;
+}
+
+div.r {
+  align-self: flex-end;
+}
+
+/* I organised the questions and answers into left and right classes so I could align them similar to how the Concert Hall site arranges its text, even without corresponding images. */
