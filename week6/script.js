@@ -47,12 +47,40 @@ c = a + b;
 
 // Selecting elements for DOM- querySelector() for the first on the document or querySelectorAll() for all
 const header = document.querySelector("header");
-console.log(header);
-console.log(header.textContent);
-header.innerHTML += "<h2>header fromm js</h2>";
+//console.log(header);
+//console.log(header.textContent);
+header.innerHTML += "<h2>header from js</h2>";
+
+const myButton = document.querySelector("#click");
+console.log(myButton);
+myButton.addEventListener("click", handleClick);
+
+function handleClick()
+{
+    console.log("clicked");
+    header.textContent = "header.....";
+    //oh my god. it works.
+    header.classList.toggle(".blue");
+    myCat.classList.toggle("round");
+}
+
+const myCat = document.querySelector("#cat");
+console.log(myCat);
+myCat.addEventListener("mouseenter", addMe);
+myCat.addEventListener("mouseleave", removeMe);
+
+function addMe()
+{
+    myCat.classList.add("round");
+}
+
+function removeMe()
+{
+    myCat.classList.remove("round");
+}
 
 const allParas = document.querySelectorAll("p");
-console.log(allParas);
+//console.log(allParas);
 for (let i = 0; i < allParas.length; i++) {
     //console.log(allParas[i].textContent);
     allParas[i].style.border = "1px solid blue";

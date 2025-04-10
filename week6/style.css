@@ -1,0 +1,22 @@
+button {
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+img {
+    display: block;
+    cursor: pointer;
+}
+
+.round {
+    border-radius:  50%;
+}
+
+.blue {
+    color: blue;
+    font-size: large;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
