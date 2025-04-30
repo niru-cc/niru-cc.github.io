@@ -1,52 +1,44 @@
+* {
+  font-family: "Cagliostro", sans-serif;
+  font-weight: lighter;
+}
+
 :root {
-    --primary-bg-color: #f4f4f4;
-    --text-color: #333;
-    --main-bg-color: #333;
-    --main-text-color: #fff;
-    --main-btn-bg-color: #938989;
-  }
-  
-  body,
-  h1,
-  p,
-  ul {
-    margin: 0;
-    padding: 0;
+    --col-01: #1f2744;
+    --col-02: #bef0ff;
+    --col-03: #feffa7;
+    --col-04: rgb(237, 200, 255);
+    --col-05: #e3b3ff57;
   }
   
   body {
-    font-family: "Arial", sans-serif;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: linear-gradient(150deg, rgb(10, 19, 44) 25%, rgb(31, 43, 65), rgb(10, 19, 44) 75%);
+    color: var(--col-02);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin: 40px;
+  }
+
+main {
+    width: 70%;
+    padding: 40px;
+    background-color: var(--col-05);
   }
   
-  /* Add additional styles as needed */
-  
-  /* Create a container for the main content */
-  .container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  /* Header styling */
   header {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    background-color: var(--col-05);
+    color: var(--col-02);
     padding: 10px 0;
     text-align: center;
-    width: 100%;
+    width: 85%;
   }
   
-  /* Navigation styling */
   nav {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
+    font-size: 16px;
   }
   
   nav ul {
@@ -61,31 +53,30 @@
   
   nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--col-03);
   }
-  
-  /* Media player styling */
-  .media-player {
+
+  .mediaplayer {
     width: 100%;
     margin: 0 auto;
   }
   
-  .media-player video {
+  audio {
     max-width: 100%;
   }
   
-  .custom-controls {
+  .controller {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    margin-top: 10px;
+    margin: 10px;
     width: 100%;
   }
   
-  .custom-controls button {
-    background-color: var(--main-btn-bg-color);
-    color: var(--main-text-color);
+  .play {
+    background-color: var(--col-01);
+    color: var(--col-02);
     border: none;
     padding: 8px 12px;
     cursor: pointer;
@@ -94,7 +85,7 @@
     align-items: center;
   }
   
-  .progress-bar {
+  .progress {
     width: 100%;
     height: 10px;
     background-color: #ddd;
@@ -102,19 +93,25 @@
     overflow: hidden;
   }
   
-  .progress-bar span {
+  .progressbar {
     display: block;
     height: 100%;
-    background-color: var(--main-bg-color);
+    background-color: var(--col-03);
     width: 0;
     transition: width 0.3s ease;
   }
   
-  /* Footer styling */
   footer {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
+    color: var(--col-02);
     text-align: center;
     padding: 10px 0;
     width: 100%;
+  }
+
+  a {
+    color: var(--col-03);
+  }
+
+  a:visited {
+    color: var(--col-04)
   }
