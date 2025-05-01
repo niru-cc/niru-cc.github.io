@@ -1,6 +1,7 @@
 * {
   font-family: "Cagliostro", sans-serif;
   font-weight: lighter;
+  
 }
 
 :root {
@@ -11,76 +12,98 @@
     --col-05: #e3b3ff57;
   }
   
-  body {
-    background: linear-gradient(150deg, rgb(10, 19, 44) 25%, rgb(31, 43, 65), rgb(10, 19, 44) 75%);
+  /*
+  I chose the colour palette above since I wanted to associate the site for relaxing/sleeping with colours for the night sky. I think if someone were to use this sort of site, it would be during the nighttime, so a darker colour palette would be easier on the eyes in the dark.
+  Everything in this site is limited to this colour palette except for the background of the body section, because I wanted to use a gradient that looks a little like the night sky, or space.
+  */
+
+body {
+    background: linear-gradient(150deg, rgb(10, 19, 44) 25%, rgb(41, 66, 88), rgb(10, 19, 44) 75%);
     color: var(--col-02);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 40px;
+    margin: auto;
   }
+
+/*
+The colour for the background of the main element is slightly transparent so the gradient of the body backrgound can still be slightly visible. I added a border to make it stand out from the page better.
+*/
 
 main {
     margin-top: 20px;
     width: 70%;
     padding: 40px;
     background-color: var(--col-05);
-    border: 5px solid var(--col-03);
+    border: 3px solid var(--col-02);
+    margin: 5%;
   }
   
-  header {
-    background-color: var(--col-05);
+header {
+    background-color: var(--col-01);
     color: var(--col-02);
-    border: 5px solid var(--col-03);
-    padding: 10px 0;
+    border-bottom: 5px solid var(--col-03);
     text-align: center;
-    width: 85%;
+    width: 100%;
   }
-  
-  ul {
+
+footer {
+    background-color: var(--col-01);
+    color: var(--col-02);
+    border-top: 5px solid var(--col-03);
+    text-align: center;
+    justify-self: flex-end;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+ul {
     list-style: none;
   }
 
-  nav {
+nav {
     margin-top: 10px;
     text-align: center;
     font-size: 16px;
   }
   
-  nav ul {
+nav ul {
     display: flex;
     justify-content: center;
   }
   
-  nav ul li {
+nav ul li {
     margin-right: 20px;
   }
   
-  nav a {
+nav a {
     text-decoration: none;
     color: var(--col-03);
   }
 
-  .mediaplayer {
+.mediaplayer {
     width: 100%;
     margin: 0 auto;
   }
   
-  audio {
+audio {
     max-width: 100%;
   }
   
-  .controller {
+.controller {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     margin: 10px;
-    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--col-02);
+    background-color: var(--col-01);
+    width: 90%;
   }
   
-  .play {
+.play {
     background-color: var(--col-01);
     color: var(--col-02);
     border: none;
@@ -91,15 +114,15 @@ main {
     align-items: center;
   }
   
-  .progress {
+.progress {
     width: 100%;
     height: 10px;
     background-color: #ddd;
-    margin-top: 10px;
+    margin: 10px;
     overflow: hidden;
   }
   
-  .progressbar {
+.progressbar {
     display: block;
     height: 100%;
     background-color: var(--col-03);
@@ -107,21 +130,23 @@ main {
     transition: width 0.3s ease;
   }
   
-  footer {
-    color: var(--col-02);
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
+h2 {
+  color: var(--col-03);
+}
 
-  a {
+footer a {
     color: var(--col-03);
   }
 
-  a:visited {
+footer a:visited {
     color: var(--col-04)
   }
 
 section li {
   margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  background-color: var(--col-02);
 }
