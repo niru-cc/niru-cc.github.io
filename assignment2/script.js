@@ -2,16 +2,13 @@ const audio = document.querySelector("#music");
 const playPauseBtn = document.querySelector("#play");
 const playPauseImg = document.querySelector("#playicon");
 const progressBar = document.querySelector("#progressbar");
+
 //added extra consts for added buttons
 const muteButton = document.querySelector("#mute");
 const muteIcon = document.querySelector("#muteicon");
 const lessButton = document.querySelector("#lessen");
 const timerButton = document.querySelector("#timer");
-const trackList = [
-  {id: 1, src: "1waves.mp3"},
-  {id: 2, src: "2hes.mp3"},
-  {id: 3, src: "3water.mp3"},
-];
+
 const t1 = document.querySelector("#s1");
 const t2 = document.querySelector("#s2");
 const t3 = document.querySelector("#s3");
