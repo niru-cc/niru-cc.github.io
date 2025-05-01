@@ -26,16 +26,10 @@
     <main>
       <div class="media-player">
 
-      <h2>Media Player</h2>
+      <h2>Music Player</h2>
 
-        <audio id="musicplayer" controls>
+        <audio id="music" controls>
           <source src="erokia_ambient-wave-56-msfxp7-78.mp3"/>
-        </audio>
-        <audio id="musicplayer" controls>
-          <source src="p-hase_Hes.mp3"/>
-        </audio>
-        <audio id="musicplayer" controls>
-          <source src="p-hase_Water-Feature.mp3"/>
         </audio>
 
         <div class="controller">
@@ -46,8 +40,12 @@
           </button>
 
           <button id="skip">
-            <img width="24" height="24" 
+            <img id="skipicon" width="24" height="24" 
             src="https://img.icons8.com/ios-glyphs/24/fast-forward.png" alt="fast-forward"/>
+          </button>
+
+          <button id="mute">
+            <img id="muteicon" width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/high-volume--v1.png" alt="high-volume--v1"/>
           </button>
 
           <div class="progress">
@@ -55,7 +53,7 @@
           </div>
 
           <button id="timer">
-            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/clock--v1.png" alt="clock--v1"/>
+            <img id="timericon" width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/clock--v1.png" alt="clock--v1"/>
           </button>
 
         </div>
@@ -64,9 +62,21 @@
       <section>
         <h2>Track List</h2>
         <ul>
-        <li>ambient wave- erokia</li>
-        <li>Hes- p-hase</li>
-        <li>Water Feature- p-hase</li>
+        <li>
+          <button class="manualplay" id="s1">
+          <img src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="pause-play" width="20" height="20"/>
+          </button> ambient wave- erokia
+        </li>
+        <li>
+          <button class="manualplay" id="s2">
+          <img src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="pause-play" width="20" height="20"/>
+          </button> Hes- p-hase
+        </li>
+        <li>
+          <button class="manualplay" id="s3">
+          <img src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="pause-play" width="20" height="20"/>
+          </button> Water Feature- p-hase
+        </li>
         </ul>
       </section>
     </main>
@@ -76,7 +86,9 @@
       <p><a href="https://icons8.com/icon/59862/play">Play</a> icon by <a href="https://icons8.com">Icons8</a></p>
       <p><a href="https://icons8.com/icon/61012/pause">Pause</a> icon by <a href="https://icons8.com">Icons8</a></p>
       <p><a href="https://icons8.com/icon/91476/fast-forward">Fast Forward</a> icon by <a href="https://icons8.com">Icons8</a></p>
-      <p><a href="https://icons8.com/icon/59760/clock">Clock</a> icon by <a href="https://icons8.com">Icons8</a></p>
+      <p><a href="https://icons8.com/icon/59734/audio">Mute</a> icon by <a href="https://icons8.com">Icons8</a></p>
+      <p><a href="https://icons8.com/icon/91635/no-audio">Mute</a> icon by <a href="https://icons8.com">Icons8</a></p>
+      <p><a href="https://icons8.com/icon/59760/clock">Mute</a> icon by <a href="https://icons8.com">Icons8</a></p>
     </footer>
   </body>
 </html>
