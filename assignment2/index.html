@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Player for Falling Asleep</title>
+    <title>Music Player for Relaxing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!--I decided to base the website around being a music player that helped people to relax. I wasn't looking for music to help with studying, and instead got the idea to have it also associated with sleeping.-->
     <header>
       <h1>Music for Relaxation and Sleeping</h1>
     </header>
@@ -24,42 +25,36 @@
     </nav>
 
     <main>
-      <div class="media-player">
+      <div class="mediaplayer">
 
       <h2 id="head1">Music Player</h2>
 
-        <audio id="music" controls>
-          <source src="erokia_ambient-wave-56-msfxp7-78.mp3"/>
-        </audio>
+        <audio id="music" src="1waves.mp3" controls></audio>
 
         <div class="controller">
 
           <button id="play" onclick="togglePlayPause()">
             <img id="playicon" 
-            src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="pause-play" width="24" height="24"/>
+            src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="pause-play" width="20" height="20" alt="play"/>
           </button>
 
-          <button id="skip">
-            <img id="skipicon" width="24" height="24" 
-            src="https://img.icons8.com/ios-glyphs/24/fast-forward.png" alt="fast-forward"/>
+          <button id="lessen">
+            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/24/low-volume.png" alt="low-volume"/>
           </button>
 
           <button id="mute">
-            <img id="muteicon" width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/high-volume--v1.png" alt="high-volume--v1"/>
+            <img id="muteicon" width="20" height="20" src="https://img.icons8.com/ios-glyphs/24/high-volume--v1.png" alt="high-volume--v1"/>
           </button>
 
           <div class="progress">
             <span id="progressbar"></span>
           </div>
 
-          <button id="timer">
-            <img id="timericon" width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/clock--v1.png" alt="clock--v1"/>
-          </button>
-
         </div>
       </div>
 
       <section>
+        <!--I wanted to have a small range of songs that could be played within the site, so I added a list here along with buttons to allow people to play whichever song they liked.-->
         <h2 id="head2">Track List</h2>
         <ul>
         <li>
@@ -86,10 +81,9 @@
       <ul>
       <li><a href="https://icons8.com/icon/59862/play">Play</a> icon by <a href="https://icons8.com">Icons8</a></li>
       <li><a href="https://icons8.com/icon/61012/pause">Pause</a> icon by <a href="https://icons8.com">Icons8</a></li>
-      <li><a href="https://icons8.com/icon/91476/fast-forward">Fast Forward</a> icon by <a href="https://icons8.com">Icons8</a></li>
-      <li><a href="https://icons8.com/icon/59734/audio">Mute</a> icon by <a href="https://icons8.com">Icons8</a></li>
+      <li><a href="https://icons8.com/icon/59734/audio">Volume</a> icon by <a href="https://icons8.com">Icons8</a></li>
+      <li><a href="https://icons8.com/icon/91634/low-volume">Low Volume</a> icon by <a href="https://icons8.com">Icons8</a></li>
       <li><a href="https://icons8.com/icon/91635/no-audio">Mute</a> icon by <a href="https://icons8.com">Icons8</a></li>
-      <li><a href="https://icons8.com/icon/59760/clock">Mute</a> icon by <a href="https://icons8.com">Icons8</a></li>
       </ul>
     </footer>
   </body>
