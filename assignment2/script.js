@@ -9,9 +9,9 @@ const muteIcon = document.querySelector("#muteicon");
 const lessButton = document.querySelector("#lessen");
 const timerButton = document.querySelector("#timer");
 const trackList = [
-  {id: 1, src: "1waves.mp3"},
-  {id: 2, src: "2hes.mp3"},
-  {id: 3, src: "3water.mp3"},
+  {id: 1, src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"},
+  {id: 2, src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Hes.mp3"},
+  {id: 3, src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/p-hase_Water-Feature.mp3"},
 ];
 const t1 = document.querySelector("#s1");
 const t2 = document.querySelector("#s2");
