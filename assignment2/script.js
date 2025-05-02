@@ -3,7 +3,7 @@ const playPauseBtn = document.querySelector("#play");
 const playPauseImg = document.querySelector("#playicon");
 const progressBar = document.querySelector("#progressbar");
 
-//added extra consts for added buttons
+//These are the extra consts for added buttons
 const muteButton = document.querySelector("#mute");
 const muteIcon = document.querySelector("#muteicon");
 const lessButton = document.querySelector("#lessen");
