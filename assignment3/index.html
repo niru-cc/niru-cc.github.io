@@ -3,13 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 8</title>
+    <title>Courier</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <!-- Courier Standard font from Adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/blv0jgp.css">
+    <!-- Courier Prime font from Google Fonts- although widely used, I knew there was a modern Courier variant for Mac and therefore wanted to make sure this specific font would be available just in case.  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1></h1>
-    <p id="a">エマノア!!</p>
+    <header>
+    <button id="hamburger"><img src="img/burger.png"></button>
+    <!-- Navigation for scrolling to each section of the site. -->
+    <nav class="hidden" id="navi">
+        <ul>
+            <li><a href="#head">Home</a></li>
+            <li><a href="#s1">Part One</a></li>
+            <li><a href="#s2">Part Two</a></li>
+            <li><a href="#s3">Part Three</a></li>
+            <li><button id="slist">Sources</button></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="hidden priority" id="sourcelist">
+        <!-- The list is not very detailed beyond links, it is more for the interaction of pulling up this menu. -->
+        <ul id="links">
+            <li id="listheading"><h3>Source List:</h3></li>
+            <li><a href="https://fonts.adobe.com/fonts/courier-new">https://fonts.adobe.com/fonts/courier-new</a></li>
+            <li><a href="https://oztypewriter.blogspot.com/2011/03/courier-font-and-typewriter.html">https://oztypewriter.blogspot.com/2011/03/courier-font-and-typewriter.html</a></li>
+            <li><a href="https://creativepro.com/napoleon-and-courier-font/">https://creativepro.com/napoleon-and-courier-font/</a></li>
+            <li><a href="https://www.albany.edu/museum/exhibitions/courier">https://www.albany.edu/museum/exhibitions/courier</a></li>
+            <li><a href="https://arquivo.pt/wayback/20160517191001/http://www.rolandstroud.com/downloads/essays/courierfonts.pdf">https://arquivo.pt/wayback/20160517191001/http://www.rolandstroud.com/downloads/essays/courierfonts.pdf</a></li>
+            <li><a href="https://www.commarts.com/columns/the-most-famous-type-designers-you-ve-never-heard-of">https://www.commarts.com/columns/the-most-famous-type-designers-you-ve-never-heard-of</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/typography/font-list/courier-new">https://learn.microsoft.com/en-us/typography/font-list/courier-new</a></li>
+            <li><a href="https://slate.com/human-interest/2004/02/goodbye-to-the-courier-font.html">https://slate.com/human-interest/2004/02/goodbye-to-the-courier-font.html</a></li>
+            <li><a href="https://quoteunquoteapps.com/courierprime/">https://quoteunquoteapps.com/courierprime/</a></li>
+            <li><a href="https://johnaugust.com/2013/introducing-courier-prime">https://johnaugust.com/2013/introducing-courier-prime</a></li>
+        </ul>
+    </div>
+    <div id="breakcaption">
+        <div id="head">
+            <h1>Courier</h1>
+        </div>
+        <p id="sub">A brief history of one of the most widely used fonts of all time</p>
+    </div>
+
+    <main>
+        <section id="s1">
+            <h2 class="old">The Original Courier</h2>
+            <p id="p1">
+                Once, Courier was one of the most widespread typefaces to be used. Even now, modern variants of it such as Courier New and Courier Prime are still commonly used. However, it did not start out as a typeface for computers. Back in 1955, IBM commissioned designer Howard Kettler to design it for their typewriters. From the late 1800's up until computers began to be used, typewriters were the way people would have things written down on paper. In the 1900's, IBM was one of the biggest producers of these typewriters, having made the IBM Selectric, considered one of the most successful typewriters to be released. So, Courier was first designed to be used for typewriters, not for computers. 
+            </p>
+            
+            <img src="img/hk.jpg" alt="source:https://typenetwork.com/font-designers/howard-kettler" id="imghk">
+
+            <p id="p2">
+                As for Howard Kettler, he was a designer who had been working with IBM since about 1952. Prior to this, he had worked in newspapers and printing. The typeface was originally going to be named 'Messenger'. In the end, the name 'Courier' came about as a synonym for the word messenger, seen by Kettler as a more sophisticated alternative.
+            </p>
+            
+            <div id="hs1" class="hidden">
+                <p id="p3">
+                    When Courier was designed, IBM chose not to have the design trademarked. As a result of this, it quickly began to see widespread use across other typewriters outside of IBM's. The wide letters allowed the font to be easily readable, and this convenient characteristic of the typeface was a part of why many other companies at the time decided to use this typeface in particular.
+                </p>
+                <p id="p4">
+                    It was also around this time that the format for screenplays was being developed. As Courier was one of the biggest fonts to be used for a typewriter, which is what these screenplays were being written with, it became the standard font to be used. The readability and monospaced characters of Courier also applied in this case as a reason to use this font for writing screenplays. Even after computers became more commonly used, people continued to keep screenplays looking like they were made with typewriters, resulting in Courier also staying as the default typeface for screenplays to this day.
+                </p>
+            </div>
+
+            <button id="b1" class="rm">Read More</button>
+        </section>
+
+        <section id="s2">
+            <h2 class="new">Courier New and the Transition to Computers</h2>
+            <p id="p5">
+                When IBM began producing their line of electric typewriters, the IBM Selectric, they had designer Adrian Frutiger remake the Courier font for it. The result was Courier New, with a noticably thinner line weight. Throughout the 80's and 90's, computers started to be used instead, and Courier New became a usable font made to resemble the text of a typewriter there, too. The earliest version of this font made available for computers was on Windows 3.1. 
+            </p>
+
+            <img src="img/ibms.jpg" alt="source:https://collections.museumsvictoria.com.au/items/827802" id="imgselectric">
+
+            <p id="p6">
+                Aside from Courier New, Fruitger was responsible for a number of other fonts, including Frutiger and Univers.
+            </p>
+            
+            <div id="hs2" class="hidden">
+                <p id="p7">
+                    Courier New, specifically in 12 points, was one of the most common fonts to be used for decades. It was the standard font used by the US State Department. Eventually, in February of 2004, the State Department announced to change from Courier New to Times New Roman in 14pt, citing its more “modern” look- a signifier of people moving on from the typewriters that the font was originally made for. However, for places like Hollywood and the area of scriptwriting, the font remained largely the same.
+                </p>
+            </div>
+            <button id="b2" class="rm">Read More</button>
+        </section>
+
+        <section id="s3">
+            <h2>Use in the Modern Day</h2>
+            <p id="p8">
+                In 2013, author and screenwriter John August released the typeface Courier Prime, which he had commissioned from font designer Alan Dague-Greene. As a screenwriter, his intention was to have an improved Courier font for screenplays. It was kept with similar spacings to previous iterations in order to keep it as one minute per page. However, the numerous optimisations that were made were also beneficial to the font for general use as well.  
+            </p>
+            <p id="p9">
+                Some of the differences between Prime and New included an actual italics font rather than simply slanted characters, thicker text weight and being made with higher resolutions in mind. Although made primarily with screenwriters in mind, the font is freely available, including in places like Google Fonts, making it easily accessible to all.
+            </p>
+            
+            <div id="hs3" class="hidden">
+                <p id="p10">
+                    Although the names of the people who create these typefaces are not as well known as their creations, they are still remembered. For example, searching up Howard Kettler's name in Google will yield an easter egg where the font for the page will be switched to Courier New. 
+                </p>
+
+                <img src="img/primecode.png" alt="source:https://stephencoakley.com/2015/08/03/my-favorite-programming-fonts" id="primecode">
+
+                <p id="p11">
+                    Monospace fonts still get plenty of use in the modern day. They still see use as a font for screenwriting, and Courier fonts in particular are still considered the standard. Additionally, they are also used for displaying code for its readability and how characters are able to line up, but also as different characters can look more visually distinct. As Courier continues to be one of the most common monospaced fonts, it is often used for this purpose as well.
+                </p>
+            </div>
+            <button id="b3" class="rm">Read More</button>
+        </section>
+    </main>
 </body>
 </html>

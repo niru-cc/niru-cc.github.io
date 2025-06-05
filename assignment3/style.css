@@ -1,7 +1,213 @@
 body {
+    font-family: 'Courier Prime', Courier, monospace;
+    background-color: var(--col-03);
+}
+.old {
+    font-family: "Courier-Std", Courier, monospace;
+}
+.new {
     font-family: 'Courier New', Courier, monospace;
 }
+:root {
+    --col-01: #584035;
+    --col-02: #8B7267;
+    --col-03: #C9B49B;
+    --col-04: #E7E3DA;
+    --col-05: #182550;
+    --col-06: #CBEAF8;
+}
 
-#a {
+/* Hamburger menu to pull up the rest of the nav. */
+#hamburger {
+    background-color: var(--col-05);
+    border: none;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    transition: scale 0.2s ease;
+}
+#hamburger:hover {
+    scale: 1.2;
+}
+/* A z-index was added to the header so that when the source list button is clicked, the list will be underneath the header so the button can be clicked a second time to hide it. */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #182550;
+    z-index: 2;
+}
+button {
+    cursor: pointer;
+}
+
+/* Getting the nav to look okay was more difficult than expected- everything had to be arranged into a flex containter with specified widths in order to make sure that the links were spaced out properly. Part of the problem was getting the hamburger menu as the trigger to show this, as it had to be in the same row. The hamburger menu would keep moving positions once it was clicked otherwise. */
+.hidden {
+    display: none;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    list-style-type: none;
+}
+nav a {
+    color: var(--col-06);
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.2);
+}
+nav li {
+    margin-left: 20px;
+    transition: scale 0.2s ease;
+}
+nav li:hover {
+    scale: 1.2;
+}
+/* The button to pull up the list of sites was made to look like the other links so that it would fit with the other nav items. */
+#slist {
+    background-color: #ffffff00;
+    color: var(--col-06);
+    border: none;
+}
+
+/* One issue I had with working with the list of sources was getting certain things prioritised- if I specified this element using its ID, I would not be able to have it hidden at the start. */
+div ul {
+    background-color: var(--col-05);
+    color: var(--col-04);
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    z-index: 1;
+    padding-top: 50px;
+}
+div li {
+    padding-bottom: 1rem;
+}
+div li {
+    color: var(--col-06);
+    transition: scale 0.3s ease;
+}
+div a:visited {
+    color: var(--col-03);
+}
+div li:hover {
+    scale: 1.1;
+}
+/* ID Assigned to the heading of the list, to change text size and prevent it from scaling up on hover like the links do. */
+#listheading {
+    font-size: 28px;
+}
+#listheading:hover {
+    scale: 1;
+}
+
+/* Title */
+#breakcaption {
+    background-color: var(--col-02);
     color: white;
+    padding-top: 40vh;;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+#sub {
+    margin-top: 80px;
+}
+h1 {
+    font-size: 128px;
+}
+
+section {
+    position: relative;
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 48px;
+}
+
+#s1 {
+    background-color: var(--col-01);
+    background-attachment: fixed;
+}
+#s2 {
+    background-color: var(--col-02);
+    color: var(--col-06);
+    background-attachment: fixed;
+}
+#s3 {
+    background-color: var(--col-06);
+    color: var(--col-01);
+    background-attachment: fixed;
+}
+
+/* "Read More" buttons */
+.rm {
+    background-color: var(--col-04);
+    color: var(--col-05);
+    padding: 5px;
+    margin: 30px;
+    width: 8rem;
+    align-self: center;
+    border: 3px solid;
+    transition: scale 0.2s ease-in-out;
+}
+.rm:hover {
+    background-color: var(--col-05);
+    color: var(--col-06);
+    scale: 0.95;
+}
+
+/* Images */
+#imghk, #imgselectric {
+    margin: 25px;
+    align-self: center;
+}
+#imghk {
+    max-width: 300px;
+    border: 4px solid var(--col-06);
+}
+#imgselectric {
+    max-width: 500px;
+    border: 4px solid var(--col-05);
+}
+#primecode {
+    margin-left: 23%;
+    margin-bottom: 30px;
+    border: 4px solid var(--col-01);
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 60%;
+    text-align: center;
+    align-self: center;
+}
+/* Ensure that the originally-hidden text is also centred- it did not center with only the above code. */
+#hs1, #hs2, #hs3 {
+    align-self: center;
 }
