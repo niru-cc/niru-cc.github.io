@@ -96,6 +96,7 @@ nav li:hover {
 /* 
 One issue I had with working with the list of sources was getting certain things prioritised- if I specified this element using its ID, I would not be able to have it hidden at the start. 
 The background colour of this popup was made the same as the div, but the border between them is visible thanks to the progress bar. The colour of the border fits better at the bottom, which is where users would likely be if they are checking the links.
+To show users that these links could be clicked, the underline was kept. The individual links were also set to scale up slightly on hover, showing that they can be interacted with. 
 */
 div ul {
     background-color: var(--col-05);
@@ -124,7 +125,7 @@ div a:visited {
 div li:hover {
     scale: 1.1;
 }
-/* ID Assigned to the heading of the list, to change text size and prevent it from scaling up on hover like the links do. */
+/* ID assigned to the heading of the list, to change text size and prevent it from scaling up on hover like the links do. */
 #listheading {
     font-size: 28px;
 }
@@ -132,10 +133,10 @@ div li:hover {
     scale: 1;
 }
 
-/* Title. A shadow was added to create depth from the background- however, editing the layering/z-indices of the written sections did not help to make the shadow apply to the rest of the sections below. */
+/* Title. 
+A shadow was added to create depth from the background- however, editing the layering/z-indices of the written sections did not help to make the shadow apply to the rest of the sections below, so it was kept as-is with the shadow being cast onto the background. */
 #breakcaption {
     background-color: var(--col-02);
-    background-image: url(img/col02.png);
     color: white;
     padding-top: 40vh;;
     height: 100vh;
@@ -174,18 +175,15 @@ h2 {
 
 #s1 {
     background-color: var(--col-01);
-    /* background-image: url(img/col01.png); */
     background-attachment: fixed;
 }
 #s2 {
     background-color: var(--col-04);
-    /* background-image: url(img/col04.png); */
     color: var(--col-01);
     background-attachment: fixed;
 }
 #s3 {
     background-color: var(--col-06);
-    /* background-image: url(img/col06.png); */
     color: var(--col-01);
     background-attachment: fixed;
 }
@@ -238,7 +236,10 @@ p {
     align-self: center;
 }
 
-/* Background. Letters spinning with scroll. */
+/* Background. Letters spinning with scroll. 
+Unfortunately, I could not implement parallax scrolling into the site the way that I wanted to, so I had to find another way to implement scrolling as an interaction of sorts within the site besides the reading progress bar. So, I added a feature to have the background with lines of letters rotate as users scroll. The individual letters themselves were scaled and rotated within the image, and lined up in a random order to start out with a bit of variety in its arrangement. The animation itself is very simple as it's just spinning the letters 360 degrees.
+I wanted the background letters to actually be under the title card, so I changed the z index value to -1 so it would show from under the title card, already animated.
+*/
 .bg {
     position: fixed;
     top: 15%;
@@ -264,9 +265,16 @@ p {
     /* animation-timing-function: linear; */
 }
 
+/* Since the animation would be hidden at first, the keyframes were adjusted so it would start slightly later into the scroll. The animation would also get very slow near the bottom, so it had to be offset slightly. */
 @keyframes letterspin {
     0% {
     rotate: 0deg;
+    }
+    8% {
+    rotate: 0deg;
+    }
+    65% {
+    rotate: 180deg;
     }
     100% {
     rotate: 360deg;
