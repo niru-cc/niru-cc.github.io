@@ -4,7 +4,16 @@ const nav = document.getElementById("navi");
 const clickref = document.getElementById("slist");
 const ref = document.getElementById("sourcelist");
 
-// The source list toggles hidden, this is because I want to make it seem like this is still part of the nav
+//Scrolling- progress bar, written so the bar updates as the user scrolls.
+window.onscroll = function() {progress()};
+function progress() {
+    var scroll = document.body.scrollTop ||
+    document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (scroll / height) * 100;
+    document.getElementById("progress").style.width = scrolled + "%";
+}
+
 burger.addEventListener("click", () => {
     nav.classList.toggle("hidden");
 })
@@ -17,16 +26,22 @@ const button1 = document.querySelector("#b1");
 const button2 = document.querySelector("#b2");
 const button3 = document.querySelector("#b3");
 
-const section1 = document.querySelector("#hs1");
-const section2 = document.querySelector("#hs2");
-const section3 = document.querySelector("#hs3");
+const section1 = document.getElementById("hs1");
+const section2 = document.getElementById("hs2");
+const section3 = document.getElementById("hs3");
 
 button1.addEventListener("click", () => {
     section1.classList.toggle("hidden");
 })
 button2.addEventListener("click", () => {
     section2.classList.toggle("hidden");
+
 })
 button3.addEventListener("click", () => {
     section3.classList.toggle("hidden");
 })
+
+// Added further down so the functions above can still work. 
+button1.addEventListener("click", progress());
+button2.addEventListener("click", progress());
+button3.addEventListener("click", progress());
