@@ -96,7 +96,6 @@ nav li:hover {
 /* 
 One issue I had with working with the list of sources was getting certain things prioritised- if I specified this element using its ID, I would not be able to have it hidden at the start. 
 The background colour of this popup was made the same as the div, but the border between them is visible thanks to the progress bar. The colour of the border fits better at the bottom, which is where users would likely be if they are checking the links.
-A z-index was added so it would go in front of the rotating letters, which are meant to be in the background of the site.
 */
 div ul {
     background-color: var(--col-05);
@@ -111,7 +110,6 @@ div ul {
     list-style-type: none;
     align-items: center;
     padding-top: 50px;
-    z-index: 1;
 }
 div li {
     padding-bottom: 1rem;
@@ -243,11 +241,14 @@ p {
 .bg {
     position: fixed;
     top: 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
 }
 
 #bg1 {
-    left: 10px;
+    left: 2%;
 }
 #bg2 {
-    right: 10px;
+    right: 2%;
 }
